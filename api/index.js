@@ -39,7 +39,7 @@ app.use(express.static(path.join(__dirname, "/BlogFront/dist")));
 
 // Handle all routes and serve the index.html file
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "BlogFront", "dist", "index.html"));
+  res.sendFile(path.join(__dirname, "/BlogFront/dist/index.html"));
 });
 
 app.use((err, req, res, next) => {
